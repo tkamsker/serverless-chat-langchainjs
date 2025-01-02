@@ -50,3 +50,18 @@ curl -X POST http://localhost:59891/api/chat-post \
  npm i 
 npm install lit @microsoft/fast-foundation
 npm install -D typescript vite @types/node
+
+
+##########################
+# infrastructure  -> serverless-chat-langchainpython
+##########################
+azd env set AZURE_LOCATION westeurope
+
+# Clean up existing resources
+azd down --purge
+
+# Redeploy with debug logging
+azd up --debug
+
+
+azd env list

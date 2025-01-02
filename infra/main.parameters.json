@@ -33,7 +33,7 @@
       "value": "${AZURE_OPENAI_API_EMBEDDINGS_MODEL_VERSION=2}"
     },
     "webappLocation": {
-      "value": "${AZURE_WEBAPP_LOCATION=francecentral}"
+      "value": "${AZURE_WEBAPP_LOCATION=westeurope}"
     },
     "useVnet": {
       "value": "${USE_VNET=false}"

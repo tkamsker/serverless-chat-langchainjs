@@ -1,0 +1,333 @@
+func start --verbose
+Found Python version 3.11.6 (python3).
+Selected out-of-process host.
+
+                  %%%%%%
+                 %%%%%%
+            @   %%%%%%    @
+          @@   %%%%%%      @@
+       @@@    %%%%%%%%%%%    @@@
+     @@      %%%%%%%%%%        @@
+       @@         %%%%       @@
+         @@      %%%       @@
+           @@    %%      @@
+                %%
+                %
+
+
+Azure Functions Core Tools
+Core Tools Version:       4.0.6610 Commit hash: N/A +0d55b5d7efe83d85d2b5c6e0b0a9c1b213e96256 (64-bit)
+Function Runtime Version: 4.1036.1.23224
+
+[2025-01-02T16:24:09.184Z] Building host: version spec: , startup suppressed: 'False', configuration suppressed: 'False', startup operation id: '2044822a-7dbd-47bf-96d0-a22806f0cca8'
+[2025-01-02T16:24:09.243Z] Reading host configuration file '/Users/thomaskamsker/Documents/Atom/AI/CURSOR/serverless-chat-langchainjs/packages/api_python/host.json'
+[2025-01-02T16:24:09.243Z] Host configuration file read:
+[2025-01-02T16:24:09.243Z] {
+[2025-01-02T16:24:09.243Z]   "version": "2.0",
+[2025-01-02T16:24:09.243Z]   "extensionBundle": {
+[2025-01-02T16:24:09.243Z]     "id": "Microsoft.Azure.Functions.ExtensionBundle",
+[2025-01-02T16:24:09.243Z]     "version": "[3.*, 4.0.0)"
+[2025-01-02T16:24:09.243Z]   },
+[2025-01-02T16:24:09.243Z]   "logging": {
+[2025-01-02T16:24:09.243Z]     "applicationInsights": {
+[2025-01-02T16:24:09.243Z]       "samplingSettings": {
+[2025-01-02T16:24:09.243Z]         "isEnabled": true,
+[2025-01-02T16:24:09.243Z]         "excludedTypes": "Request"
+[2025-01-02T16:24:09.243Z]       }
+[2025-01-02T16:24:09.243Z]     }
+[2025-01-02T16:24:09.243Z]   },
+[2025-01-02T16:24:09.243Z]   "functionTimeout": "00:10:00",
+[2025-01-02T16:24:09.243Z]   "extensions": {
+[2025-01-02T16:24:09.243Z]     "http": {
+[2025-01-02T16:24:09.243Z]       "routePrefix": "api",
+[2025-01-02T16:24:09.243Z]       "maxOutstandingRequests": 200,
+[2025-01-02T16:24:09.243Z]       "maxConcurrentRequests": 100,
+[2025-01-02T16:24:09.243Z]       "dynamicThrottlesEnabled": true
+[2025-01-02T16:24:09.243Z]     }
+[2025-01-02T16:24:09.243Z]   }
+[2025-01-02T16:24:09.243Z] }
+[2025-01-02T16:24:09.265Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: java
+[2025-01-02T16:24:09.266Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: powershell
+[2025-01-02T16:24:09.266Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: node
+[2025-01-02T16:24:09.267Z] Looking for extension bundle Microsoft.Azure.Functions.ExtensionBundle at /Users/thomaskamsker/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle
+[2025-01-02T16:24:09.267Z] Found a matching extension bundle at /Users/thomaskamsker/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/3.33.0
+[2025-01-02T16:24:09.272Z] Loading functions metadata
+[2025-01-02T16:24:09.272Z] Worker indexing is enabled
+[2025-01-02T16:24:09.273Z] Fetching metadata for workerRuntime: python
+[2025-01-02T16:24:09.274Z] Reading functions metadata (Worker)
+[2025-01-02T16:24:09.366Z]  INFO: Starting Azure Functions Python Worker.
+[2025-01-02T16:24:09.366Z]  INFO: Worker ID: da60ad67-67f5-4736-b7ed-ebe31a3c8c82, Request ID: 5e3e5600-9d81-49f9-bf8f-1cfd03b86640, Host Address: 127.0.0.1:57102
+[2025-01-02T16:24:09.440Z]  INFO: Successfully opened gRPC channel to 127.0.0.1:57102 
+[2025-01-02T16:24:09.440Z]  INFO: Detaching console logging.
+[2025-01-02T16:24:11.476Z] Switched to gRPC logging.
+[2025-01-02T16:24:11.485Z] Received WorkerInitRequest, python version 3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)], worker version 4.31.0, request ID 5e3e5600-9d81-49f9-bf8f-1cfd03b86640. App Settings state: PYTHON_THREADPOOL_THREAD_COUNT: 1000 | PYTHON_ENABLE_WORKER_EXTENSIONS: False. To enable debug level logging, please refer to https://aka.ms/python-enable-debug-logging
+[2025-01-02T16:24:11.567Z] Received WorkerMetadataRequest, request ID 5e3e5600-9d81-49f9-bf8f-1cfd03b86640, function_path: /Users/thomaskamsker/Documents/Atom/AI/CURSOR/serverless-chat-langchainjs/packages/api_python/function_app.py
+[2025-01-02T16:24:11.572Z] Reading functions metadata (Host)
+[2025-01-02T16:24:11.575Z] 0 functions found (Host)
+[2025-01-02T16:24:11.577Z] 0 functions loaded
+[2025-01-02T16:24:11.577Z] Looking for extension bundle Microsoft.Azure.Functions.ExtensionBundle at /Users/thomaskamsker/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle
+[2025-01-02T16:24:11.578Z] Found a matching extension bundle at /Users/thomaskamsker/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/3.33.0
+[2025-01-02T16:24:11.578Z] Fetching information on versions of extension bundle Microsoft.Azure.Functions.ExtensionBundle available on https://functionscdn.azureedge.net/public/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/index.json
+[2025-01-02T16:24:11.663Z] Skipping bundle download since it already exists at path /Users/thomaskamsker/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/3.33.0
+[2025-01-02T16:24:11.664Z] Loading extension bundle from /Users/thomaskamsker/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/3.33.0/bin
+[2025-01-02T16:24:11.664Z] Script Startup resetting load context with base path: '/Users/thomaskamsker/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/3.33.0/bin'.
+[2025-01-02T16:24:11.668Z] Reading host configuration file '/Users/thomaskamsker/Documents/Atom/AI/CURSOR/serverless-chat-langchainjs/packages/api_python/host.json'
+[2025-01-02T16:24:11.668Z] Host configuration file read:
+[2025-01-02T16:24:11.668Z] {
+[2025-01-02T16:24:11.668Z]   "version": "2.0",
+[2025-01-02T16:24:11.668Z]   "extensionBundle": {
+[2025-01-02T16:24:11.668Z]     "id": "Microsoft.Azure.Functions.ExtensionBundle",
+[2025-01-02T16:24:11.668Z]     "version": "[3.*, 4.0.0)"
+[2025-01-02T16:24:11.668Z]   },
+[2025-01-02T16:24:11.668Z]   "logging": {
+[2025-01-02T16:24:11.668Z]     "applicationInsights": {
+[2025-01-02T16:24:11.668Z]       "samplingSettings": {
+[2025-01-02T16:24:11.668Z]         "isEnabled": true,
+[2025-01-02T16:24:11.668Z]         "excludedTypes": "Request"
+[2025-01-02T16:24:11.668Z]       }
+[2025-01-02T16:24:11.668Z]     }
+[2025-01-02T16:24:11.668Z]   },
+[2025-01-02T16:24:11.669Z]   "functionTimeout": "00:10:00",
+[2025-01-02T16:24:11.669Z]   "extensions": {
+[2025-01-02T16:24:11.669Z]     "http": {
+[2025-01-02T16:24:11.669Z]       "routePrefix": "api",
+[2025-01-02T16:24:11.669Z]       "maxOutstandingRequests": 200,
+[2025-01-02T16:24:11.669Z]       "maxConcurrentRequests": 100,
+[2025-01-02T16:24:11.669Z]       "dynamicThrottlesEnabled": true
+[2025-01-02T16:24:11.669Z]     }
+[2025-01-02T16:24:11.669Z]   }
+[2025-01-02T16:24:11.669Z] }
+[2025-01-02T16:24:11.688Z] Starting host metrics provider.
+[2025-01-02T16:24:11.707Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: java
+[2025-01-02T16:24:11.708Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: powershell
+[2025-01-02T16:24:11.708Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: node
+[2025-01-02T16:24:11.708Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: java
+[2025-01-02T16:24:11.709Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: powershell
+[2025-01-02T16:24:11.709Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: node
+[2025-01-02T16:24:11.738Z] Initializing Warmup Extension.
+[2025-01-02T16:24:11.751Z] Initializing Host. OperationId: '2044822a-7dbd-47bf-96d0-a22806f0cca8'.
+[2025-01-02T16:24:11.753Z] Host initialization: ConsecutiveErrors=0, StartupCount=1, OperationId=2044822a-7dbd-47bf-96d0-a22806f0cca8
+[2025-01-02T16:24:11.770Z] LoggerFilterOptions
+[2025-01-02T16:24:11.770Z] {
+[2025-01-02T16:24:11.770Z]   "MinLevel": "None",
+[2025-01-02T16:24:11.770Z]   "Rules": [
+[2025-01-02T16:24:11.770Z]     {
+[2025-01-02T16:24:11.770Z]       "ProviderName": null,
+[2025-01-02T16:24:11.770Z]       "CategoryName": "Microsoft.Hosting.Lifetime",
+[2025-01-02T16:24:11.770Z]       "LogLevel": "None",
+[2025-01-02T16:24:11.770Z]       "Filter": null
+[2025-01-02T16:24:11.770Z]     },
+[2025-01-02T16:24:11.770Z]     {
+[2025-01-02T16:24:11.770Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2025-01-02T16:24:11.770Z]       "CategoryName": null,
+[2025-01-02T16:24:11.770Z]       "LogLevel": "None",
+[2025-01-02T16:24:11.770Z]       "Filter": null
+[2025-01-02T16:24:11.770Z]     },
+[2025-01-02T16:24:11.770Z]     {
+[2025-01-02T16:24:11.770Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2025-01-02T16:24:11.770Z]       "CategoryName": null,
+[2025-01-02T16:24:11.770Z]       "LogLevel": null,
+[2025-01-02T16:24:11.770Z]       "Filter": "<AddFilter>b__0"
+[2025-01-02T16:24:11.770Z]     },
+[2025-01-02T16:24:11.771Z]     {
+[2025-01-02T16:24:11.771Z]       "ProviderName": null,
+[2025-01-02T16:24:11.771Z]       "CategoryName": null,
+[2025-01-02T16:24:11.771Z]       "LogLevel": null,
+[2025-01-02T16:24:11.771Z]       "Filter": "<AddFilter>b__0"
+[2025-01-02T16:24:11.771Z]     },
+[2025-01-02T16:24:11.771Z]     {
+[2025-01-02T16:24:11.771Z]       "ProviderName": null,
+[2025-01-02T16:24:11.771Z]       "CategoryName": null,
+[2025-01-02T16:24:11.771Z]       "LogLevel": null,
+[2025-01-02T16:24:11.771Z]       "Filter": "<AddFilter>b__0"
+[2025-01-02T16:24:11.771Z]     },
+[2025-01-02T16:24:11.771Z]     {
+[2025-01-02T16:24:11.771Z]       "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+[2025-01-02T16:24:11.771Z]       "CategoryName": null,
+[2025-01-02T16:24:11.771Z]       "LogLevel": "None",
+[2025-01-02T16:24:11.771Z]       "Filter": null
+[2025-01-02T16:24:11.771Z]     },
+[2025-01-02T16:24:11.771Z]     {
+[2025-01-02T16:24:11.771Z]       "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+[2025-01-02T16:24:11.771Z]       "CategoryName": null,
+[2025-01-02T16:24:11.771Z]       "LogLevel": null,
+[2025-01-02T16:24:11.771Z]       "Filter": "<AddFilter>b__0"
+[2025-01-02T16:24:11.771Z]     },
+[2025-01-02T16:24:11.771Z]     {
+[2025-01-02T16:24:11.771Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2025-01-02T16:24:11.771Z]       "CategoryName": null,
+[2025-01-02T16:24:11.771Z]       "LogLevel": null,
+[2025-01-02T16:24:11.771Z]       "Filter": "<AddFilter>b__0"
+[2025-01-02T16:24:11.771Z]     }
+[2025-01-02T16:24:11.771Z]   ]
+[2025-01-02T16:24:11.771Z] }
+[2025-01-02T16:24:11.771Z] LoggerFilterOptions
+[2025-01-02T16:24:11.771Z] {
+[2025-01-02T16:24:11.771Z]   "MinLevel": "None",
+[2025-01-02T16:24:11.771Z]   "Rules": [
+[2025-01-02T16:24:11.771Z]     {
+[2025-01-02T16:24:11.771Z]       "ProviderName": null,
+[2025-01-02T16:24:11.771Z]       "CategoryName": "Microsoft.Hosting.Lifetime",
+[2025-01-02T16:24:11.771Z]       "LogLevel": "None",
+[2025-01-02T16:24:11.771Z]       "Filter": null
+[2025-01-02T16:24:11.771Z]     },
+[2025-01-02T16:24:11.771Z]     {
+[2025-01-02T16:24:11.771Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2025-01-02T16:24:11.771Z]       "CategoryName": null,
+[2025-01-02T16:24:11.771Z]       "LogLevel": "None",
+[2025-01-02T16:24:11.771Z]       "Filter": null
+[2025-01-02T16:24:11.771Z]     },
+[2025-01-02T16:24:11.771Z]     {
+[2025-01-02T16:24:11.771Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2025-01-02T16:24:11.771Z]       "CategoryName": null,
+[2025-01-02T16:24:11.772Z]       "LogLevel": null,
+[2025-01-02T16:24:11.772Z]       "Filter": "<AddFilter>b__0"
+[2025-01-02T16:24:11.772Z]     },
+[2025-01-02T16:24:11.772Z]     {
+[2025-01-02T16:24:11.772Z]       "ProviderName": null,
+[2025-01-02T16:24:11.772Z]       "CategoryName": null,
+[2025-01-02T16:24:11.772Z]       "LogLevel": null,
+[2025-01-02T16:24:11.772Z]       "Filter": "<AddFilter>b__0"
+[2025-01-02T16:24:11.772Z]     },
+[2025-01-02T16:24:11.772Z]     {
+[2025-01-02T16:24:11.772Z]       "ProviderName": null,
+[2025-01-02T16:24:11.772Z]       "CategoryName": null,
+[2025-01-02T16:24:11.772Z]       "LogLevel": null,
+[2025-01-02T16:24:11.772Z]       "Filter": "<AddFilter>b__0"
+[2025-01-02T16:24:11.772Z]     },
+[2025-01-02T16:24:11.772Z]     {
+[2025-01-02T16:24:11.772Z]       "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+[2025-01-02T16:24:11.772Z]       "CategoryName": null,
+[2025-01-02T16:24:11.772Z]       "LogLevel": "None",
+[2025-01-02T16:24:11.772Z]       "Filter": null
+[2025-01-02T16:24:11.772Z]     },
+[2025-01-02T16:24:11.772Z]     {
+[2025-01-02T16:24:11.772Z]       "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+[2025-01-02T16:24:11.772Z]       "CategoryName": null,
+[2025-01-02T16:24:11.772Z]       "LogLevel": null,
+[2025-01-02T16:24:11.772Z]       "Filter": "<AddFilter>b__0"
+[2025-01-02T16:24:11.772Z]     },
+[2025-01-02T16:24:11.772Z]     {
+[2025-01-02T16:24:11.772Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2025-01-02T16:24:11.772Z]       "CategoryName": null,
+[2025-01-02T16:24:11.772Z]       "LogLevel": null,
+[2025-01-02T16:24:11.772Z]       "Filter": "<AddFilter>b__0"
+[2025-01-02T16:24:11.772Z]     }
+[2025-01-02T16:24:11.772Z]   ]
+[2025-01-02T16:24:11.772Z] }
+[2025-01-02T16:24:11.772Z] LanguageWorkerOptions
+[2025-01-02T16:24:11.772Z] {
+[2025-01-02T16:24:11.772Z]   "WorkerConfigs": [
+[2025-01-02T16:24:11.772Z]     {
+[2025-01-02T16:24:11.772Z]       "Description": {
+[2025-01-02T16:24:11.772Z]         "Language": "python",
+[2025-01-02T16:24:11.772Z]         "DefaultRuntimeName": null,
+[2025-01-02T16:24:11.772Z]         "DefaultRuntimeVersion": "3.11",
+[2025-01-02T16:24:11.772Z]         "SupportedArchitectures": [
+[2025-01-02T16:24:11.772Z]           "X64",
+[2025-01-02T16:24:11.772Z]           "X86",
+[2025-01-02T16:24:11.772Z]           "Arm64"
+[2025-01-02T16:24:11.772Z]         ],
+[2025-01-02T16:24:11.772Z]         "SupportedOperatingSystems": [
+[2025-01-02T16:24:11.772Z]           "LINUX",
+[2025-01-02T16:24:11.773Z]           "OSX",
+[2025-01-02T16:24:11.773Z]           "WINDOWS"
+[2025-01-02T16:24:11.773Z]         ],
+[2025-01-02T16:24:11.773Z]         "SupportedRuntimeVersions": [
+[2025-01-02T16:24:11.773Z]           "3.7",
+[2025-01-02T16:24:11.773Z]           "3.8",
+[2025-01-02T16:24:11.773Z]           "3.9",
+[2025-01-02T16:24:11.773Z]           "3.10",
+[2025-01-02T16:24:11.773Z]           "3.11",
+[2025-01-02T16:24:11.773Z]           "3.12"
+[2025-01-02T16:24:11.773Z]         ],
+[2025-01-02T16:24:11.773Z]         "SanitizeRuntimeVersionRegex": null,
+[2025-01-02T16:24:11.773Z]         "WorkerIndexing": "true",
+[2025-01-02T16:24:11.773Z]         "Extensions": [
+[2025-01-02T16:24:11.773Z]           ".py"
+[2025-01-02T16:24:11.773Z]         ],
+[2025-01-02T16:24:11.773Z]         "UseStdErrorStreamForErrorsOnly": false,
+[2025-01-02T16:24:11.773Z]         "DefaultExecutablePath": "python3",
+[2025-01-02T16:24:11.773Z]         "DefaultWorkerPath": "/Users/thomaskamsker/.nvm/versions/node/v21.6.2/lib/node_modules/azure-functions-core-tools/bin/workers/python/3.11/OSX/Arm64/worker.py",
+[2025-01-02T16:24:11.773Z]         "WorkerDirectory": "/Users/thomaskamsker/.nvm/versions/node/v21.6.2/lib/node_modules/azure-functions-core-tools/bin/workers/python",
+[2025-01-02T16:24:11.773Z]         "Arguments": [],
+[2025-01-02T16:24:11.773Z]         "WorkerArguments": null,
+[2025-01-02T16:24:11.773Z]         "IsDisabled": null
+[2025-01-02T16:24:11.773Z]       },
+[2025-01-02T16:24:11.773Z]       "Arguments": {
+[2025-01-02T16:24:11.773Z]         "ExecutablePath": "python3",
+[2025-01-02T16:24:11.773Z]         "ExecutableArguments": [],
+[2025-01-02T16:24:11.773Z]         "WorkerPath": "/Users/thomaskamsker/.nvm/versions/node/v21.6.2/lib/node_modules/azure-functions-core-tools/bin/workers/python/3.11/OSX/Arm64/worker.py",
+[2025-01-02T16:24:11.773Z]         "WorkerArguments": []
+[2025-01-02T16:24:11.773Z]       },
+[2025-01-02T16:24:11.773Z]       "CountOptions": {
+[2025-01-02T16:24:11.773Z]         "SetProcessCountToNumberOfCpuCores": false,
+[2025-01-02T16:24:11.773Z]         "ProcessCount": 1,
+[2025-01-02T16:24:11.773Z]         "MaxProcessCount": 10,
+[2025-01-02T16:24:11.773Z]         "ProcessStartupInterval": "00:00:10",
+[2025-01-02T16:24:11.773Z]         "ProcessStartupTimeout": "00:01:00",
+[2025-01-02T16:24:11.773Z]         "InitializationTimeout": "00:00:10",
+[2025-01-02T16:24:11.773Z]         "EnvironmentReloadTimeout": "00:00:30",
+[2025-01-02T16:24:11.773Z]         "ProcessRestartInterval": "00:00:10",
+[2025-01-02T16:24:11.773Z]         "ProcessShutdownTimeout": "00:00:10"
+[2025-01-02T16:24:11.773Z]       }
+[2025-01-02T16:24:11.773Z]     }
+[2025-01-02T16:24:11.773Z]   ]
+[2025-01-02T16:24:11.773Z] }
+[2025-01-02T16:24:11.773Z] FunctionResultAggregatorOptions
+[2025-01-02T16:24:11.773Z] {
+[2025-01-02T16:24:11.773Z]   "BatchSize": 1000,
+[2025-01-02T16:24:11.773Z]   "FlushTimeout": "00:00:30",
+[2025-01-02T16:24:11.773Z]   "IsEnabled": true
+[2025-01-02T16:24:11.773Z] }
+[2025-01-02T16:24:11.773Z] ConcurrencyOptions
+[2025-01-02T16:24:11.774Z] {
+[2025-01-02T16:24:11.774Z]   "DynamicConcurrencyEnabled": false,
+[2025-01-02T16:24:11.774Z]   "MaximumFunctionConcurrency": 500,
+[2025-01-02T16:24:11.774Z]   "CPUThreshold": 0.8,
+[2025-01-02T16:24:11.774Z]   "SnapshotPersistenceEnabled": true
+[2025-01-02T16:24:11.774Z] }
+[2025-01-02T16:24:11.774Z] SingletonOptions
+[2025-01-02T16:24:11.774Z] {
+[2025-01-02T16:24:11.774Z]   "LockPeriod": "00:00:15",
+[2025-01-02T16:24:11.774Z]   "ListenerLockPeriod": "00:00:15",
+[2025-01-02T16:24:11.774Z]   "LockAcquisitionTimeout": "10675199.02:48:05.4775807",
+[2025-01-02T16:24:11.774Z]   "LockAcquisitionPollingInterval": "00:00:05",
+[2025-01-02T16:24:11.774Z]   "ListenerLockRecoveryPollingInterval": "00:01:00"
+[2025-01-02T16:24:11.774Z] }
+[2025-01-02T16:24:11.774Z] ScaleOptions
+[2025-01-02T16:24:11.774Z] {
+[2025-01-02T16:24:11.774Z]   "ScaleMetricsMaxAge": "00:02:00",
+[2025-01-02T16:24:11.774Z]   "ScaleMetricsSampleInterval": "00:00:10",
+[2025-01-02T16:24:11.774Z]   "MetricsPurgeEnabled": true,
+[2025-01-02T16:24:11.774Z]   "IsTargetScalingEnabled": true,
+[2025-01-02T16:24:11.774Z]   "IsRuntimeScalingEnabled": false
+[2025-01-02T16:24:11.774Z] }
+[2025-01-02T16:24:11.775Z] Starting JobHost
+[2025-01-02T16:24:11.776Z] Starting Host (HostId=macbookpro-371160457, InstanceId=a5d10381-765a-4b0a-91fd-bf01cd94ca0c, Version=4.1036.1.23224, ProcessId=89305, AppDomainId=1, InDebugMode=False, InDiagnosticMode=False, FunctionsExtensionVersion=(null))
+[2025-01-02T16:24:11.779Z] Loading functions metadata
+[2025-01-02T16:24:11.779Z] Worker indexing is enabled
+[2025-01-02T16:24:11.779Z] Fetching metadata for workerRuntime: python
+[2025-01-02T16:24:11.779Z] Reading functions metadata (Worker)
+[2025-01-02T16:24:11.779Z] Reading functions metadata (Host)
+[2025-01-02T16:24:11.779Z] 0 functions found (Host)
+[2025-01-02T16:24:11.781Z] Reading functions metadata (Custom)
+[2025-01-02T16:24:11.785Z] 0 functions found (Custom)
+[2025-01-02T16:24:11.786Z] 0 functions loaded
+[2025-01-02T16:24:11.793Z] Generating 0 job function(s)
+[2025-01-02T16:24:11.799Z] No job functions found. Try making your job classes and methods public. If you're using binding extensions (e.g. Azure Storage, ServiceBus, Timers, etc.) make sure you've called the registration method for the extension(s) in your startup code (e.g. builder.AddAzureStorage(), builder.AddServiceBus(), builder.AddTimers(), etc.).
+[2025-01-02T16:24:11.802Z] HttpOptions
+[2025-01-02T16:24:11.802Z] {
+[2025-01-02T16:24:11.802Z]   "DynamicThrottlesEnabled": true,
+[2025-01-02T16:24:11.803Z]   "EnableChunkedRequestBinding": false,
+[2025-01-02T16:24:11.803Z]   "MaxConcurrentRequests": 100,
+[2025-01-02T16:24:11.803Z]   "MaxOutstandingRequests": 200,
+[2025-01-02T16:24:11.803Z]   "RoutePrefix": "api"
+[2025-01-02T16:24:11.803Z] }
+[2025-01-02T16:24:11.803Z] Initializing function HTTP routes
+[2025-01-02T16:24:11.803Z] No HTTP routes mapped
+[2025-01-02T16:24:11.803Z] 
+[2025-01-02T16:24:11.806Z] Host initialized (26ms)
+[2025-01-02T16:24:11.807Z] Host started (30ms)
+[2025-01-02T16:24:11.807Z] Job host started
+[2025-01-02T16:24:16.773Z] Host lock lease acquired by instance ID '000000000000000000000000DB4F1B81'.
