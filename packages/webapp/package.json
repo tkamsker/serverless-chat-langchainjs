@@ -14,10 +14,13 @@
   "license": "MIT",
   "dependencies": {
     "@microsoft/ai-chat-protocol": "^1.0.0-beta.20240814.1",
-    "lit": "^3.0.0"
+    "@microsoft/fast-foundation": "^2.50.0",
+    "lit": "^3.2.1"
   },
   "devDependencies": {
-    "vite": "^6.0.2"
+    "@types/node": "^22.10.3",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.6"
   },
   "files": [
     "dist"
